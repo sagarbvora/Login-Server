@@ -83,6 +83,7 @@ exports.create = async (req, res) => {
     });
 };
 
+
 exports.login = (req, res) => {
     Users.findOne({email: req.body.email, isActive: true})
         .then(login => {
